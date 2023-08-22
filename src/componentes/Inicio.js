@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { skillss } from '../data/skills';
+import { ListadoTrabajos } from './ListadoTrabajos';
+import { ListadodeSkills } from './ListadodeSkills';
 export const Inicio = () => {
   const [showAlternateHeader, setShowAlternateHeader] = useState(false);
   const toggleHeader = () => {
@@ -23,10 +26,14 @@ export const Inicio = () => {
       <h2>Te ayudaré en proyectos de empresariales, requerimientos específicos de empresa o en crear tu sitio o aplicación web.
         <Link to="/contacto"> Contacta Conmigo </Link>
       </h2>
-
       <section className='last-works' >
-        <h4>Mis proyectos Profesionales</h4>
+        <h3>Mis <strong> Herramientas </strong> </h3>
+        <ListadodeSkills></ListadodeSkills>
       </section>
+      <section>
+        
+      </section>
+
     </div>
   );
 };

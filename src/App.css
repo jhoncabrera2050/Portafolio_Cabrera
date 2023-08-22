@@ -42,6 +42,7 @@
 }
 
 .header{
+  margin-top: 20px;
   display: flex;
   height: 132px;
   justify-content: center;
@@ -49,10 +50,31 @@
   list-style: none;
   border-bottom: 3px solii  black;
   margin-bottom: 35px;
+  background: rgb(36, 36, 36);
+  border-radius: 29px;
 }
 .header .logo{
   flex-grow: 2;
+  display: flex;
+  color: white;
+  padding: 40px;
 }
+
+.header .logo span{
+  display: block;
+  font-size: 90px;
+  font-weight: bolder;
+  margin-top: -8px;
+}
+
+.header .logo h3{
+  display: block;
+  flex-basis: 40px;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+
+
 .header nav{
   flex-grow: 1;
 }
@@ -62,6 +84,8 @@
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  margin: 35px;
+  
 }
 .header li{
   text-transform: uppercase;
@@ -86,13 +110,15 @@
 }
 
 .header li a{
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 300ms;
 }
 .header .active,
-.header a:hover{
+.header a:hover,
+.header a:active {
   color: #fa4529;
+  border-bottom: 4px solid white;
 }
 .content{
   min-height: 400px;
@@ -110,18 +136,47 @@
   font-weight: 400;
   font-size: 60px;
 }
+
+.home h3{
+  font-family: Times, serif;
+  font-weight: 200;
+  font-size: 40px;
+}
 .home h2{
   font-weight: 400;
   font-size: 60px;
   font-size: 20px;
   color: rgb(148, 146, 146);
 }
+.jhon{
+  margin-top: 10px;
+  width: 80px;
+}
+.carrusel{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.elemento{
+  flex: 1 0 auto;
+  margin: 0 50px;
+  width: 500px;
+  height: 500px;
+}
+
+.skil-img{
+  width: 80px;
+  height: 100px;
+}
 
 .home h4{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 30px;
+  transition: all 300ms;
 }
+
 .home a{
   padding: 7px;
   border-radius: 5px;

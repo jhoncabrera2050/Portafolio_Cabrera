@@ -1,6 +1,6 @@
-export const trabajos =[
+export const experiencia =[
     {
-        id :'pagina_web',
+        id :'yanbal',
         title: "Pagina-Web",
         author: 'Jhon Joseph Cabrera Ojanama',
         size: 220,

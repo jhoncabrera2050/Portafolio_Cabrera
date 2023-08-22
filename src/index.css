@@ -1,4 +1,5 @@
 body {
+  background: #F1F1F1;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +12,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.works{
+  display: flex;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: order 4s ease-in-out; /* Aumenta la duración a 1 segundo y usa ease-in-out */
+}
+.work-item:hover {
+  transform: scale(1.1); /* Puedes ajustar la escala según tus preferencias */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+
+
+.work-item.hovered {
+  order: 1; /* Cambia el orden cuando el elemento está en hover */
+}
+
+
+
+
+
+.work-item .mask{
+  padding: 19px;
+}
+
+
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 9s ease;
+}
+
+.tags {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.tag {
+  background-color: #EDF2F7;
+  color: #333;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  
+}
+
